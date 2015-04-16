@@ -1,9 +1,12 @@
 language: node_js
 node_js:
-  - "0.12"
-  - "0.11"
-  - "0.10"
-  - "0.8"
-  - "0.6"
-  - "iojs"
-  - "iojs-v1.0.4" 
+- '0.12'
+- '0.11'
+- '0.10'
+- '0.8'
+- '0.6'
+- iojs
+- iojs-v1.0.4
+notifications:
+  slack:
+    secure: KW5rqsJm6pDBWVpGRB3/NuDMhtv1U7fuqhRo+sNDahQk9R1Nw6LWJMneZwOjT5DqhdnOPTWnYD9cxlxlxhXNFMEhUKgK+PEZ4BiUYPXjasVI9rph+bjx12fXT83VE3WIwJ5nkKIWSgho4KEPiAn6MMg3/VtNBLlBwEVVdKJ2TzY=
