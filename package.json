@@ -2,9 +2,15 @@
   "name": "dockerise-nodeapp",
   "private": true,
   "version": "0.0.1",
-  "description": "Node.js Hello world app on CentOS using docker",
+  "description": "Node.js app on CentOS using docker",
   "author": "Simon Hoye <simonhoye@gmail.com>",
   "dependencies": {
     "express": "3.2.4"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.1",
+    "chai": "~1.9.0",
+    "istanbul": "~0.2.4",
+    "coveralls": "^2.11.2"
   }
 }

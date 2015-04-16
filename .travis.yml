@@ -10,3 +10,4 @@ node_js:
 notifications:
   slack:
     secure: KW5rqsJm6pDBWVpGRB3/NuDMhtv1U7fuqhRo+sNDahQk9R1Nw6LWJMneZwOjT5DqhdnOPTWnYD9cxlxlxhXNFMEhUKgK+PEZ4BiUYPXjasVI9rph+bjx12fXT83VE3WIwJ5nkKIWSgho4KEPiAn6MMg3/VtNBLlBwEVVdKJ2TzY=
+after_script: NODE_ENV=test istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
